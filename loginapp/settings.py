@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'loginapp.wsgi.application'
 default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
 # added new database config
-DATABASES = {'default': config('DATABASE_URL', default=default_dburl), }
+DATABASES = {'default': config('DATABASE_URL', default=default_dburl)}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
